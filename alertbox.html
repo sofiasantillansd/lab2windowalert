@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>window.alert</title>
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Special+Elite&display=swap');
+
+        .waldo {
+         margin: 0;
+         padding: 0;
+         height: 100%;
+         width: 100%;
+         font-size: 30px;
+         opacity: .75;
+         overflow: hidden;
+         font-family: 'Special Elite', cursive;
+        }
+
+        body {
+        overflow: hidden; 
+        height: 100vh; --xy: 50% 50%; 
+        --r: 30vh; cursor: none;
+        background: radial-gradient(circle at var(--xy), #0000, #000f var(--r)),
+        url(https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80);
+}
+
+        .title {
+            font-family: 'Rock Salt', cursive;
+            font-size: 50px;
+            position: static;
+            margin-left: 32%;
+        }
+    </style>
+
+    <body>
+        <div class="title">Find the word <a onclick="fakebnana()">banana</a></div>
+        <div class="waldo">I am going to do it. I have made up my mind. 
+            These are the first few words of the new… the best … the Longest Text In The Entire 
+            History Of The Known Universe! This Has To Have Over 35,000 words the beat the current 
+            world record set by that person who made that flaming chicken handbooky thingy. 
+            I might just be saying random things the whole time I type in this so you might get
+            confused a lot. I just discovered something terrible. autocorrect is on!! no!!!
+            this has to be crazy, so I will have to break all the English language rules and the
+            basic knowledge of the average human being. I am not an average human being, however 
+            I am special. no no no, not THAT kind of special ;). Why do people send that wink face! 
+            it always gives me nightmares! it can make a completely normal sentence creepy. 
+            imagine you are going to a friend’s house, so you text this: [ see you soon 🙂 ] 
+            seems normal, right? But what is you add the word semi to that colon? (Is that right? 
+            or is it the other way around) what is you add a lorry to that briquettes? 
+            (Semi-truck to that coal-on) anyway, back to the point: [ see you soon 😉 ]THAT IS JUST 
+            SO CREEPY! is that really your friend, or is it a creepy stalker watching your every 
+            move? Or even worse, is it your friend who is a creepy stalker? maybe you thought 
+            it was your friend, but it was actually your fri end (let me explain: you are happily 
+            in McDonalds, getting fat while eating yummy food and some random dude walks up and 
+            blots out the sun (he looks like a regular here) you can’t see anything else than him, 
+            so you can’t try to avoid eye contact. he finishes eating his cheeseburger 
+            you’ve never met him before but he looks like he could be in 
+            some weird cult. he clears his throat and asks you a very personal question. “can 
+            i have some French fries?” (I don’t know why there called French fries when I’ve 
+            never seen a French person eat fries! all they eat it is stuff like baguettes and 
+            crêpes and rats named ratty-two-ee which is a really fun game on the PlayStation 2) 
+            And you think {bubbly cloud thinking bubble} “Hahahahahhahahahahahahahaha!!!!!!!!!!!! 
+            Hehheheheheh…..heeeheehe..hehe… sigh. I remember that i was just about to eat one of 
+            my fries when I noticed something mushy and moist and [insert gross color like green a
+            friend, not a fri end)and all Joe does is watch sports like 
+            football with bob and all bob does is gamble ferociously (don’t ask(it means he buys 
+            all those bags of chips that say “win a free monkey or something if you find a <a onclick="b1()">banana</a> 
+            in your bag*”(if there is a little star it means there is fine print so I always 
+            check the back of the package) *flips over the package* okay, it says: “one of our 
+            workers accidentally threw a<a onclick="b2()"> banana</a> in the packing machine and we don’t want to get 
+            sued so we did this promotion thing” cool. Oh wow, this is salt and vinegar! my 
+            favourite! i hate cheese and onion.))and that’s pretty much his life, he lives in 
+            Jamaica with Naruto and his friends) so you give him that gross fri end he throws up 
+            all over you and me and the worker behind the counter who was still making an onion, 
+            and THAT is the story of the fri end, not a friend who somehow remembered your name and 
+            your phone number / email so he could text you saying he would come to your house soon. 
+            *finally takes a breath after typing a few hundred words about fri-ends* so what now? i 
+            know, i know, you think i ramble too much and use too many brackets (i don’t) but now i 
+            am going to talk about my amAZEing day. first i woke up, ate choco pops for breakfast 
+            even tho i always hate it when people say that cause i get jealous and super hungry. 
+            then i… umm… yea! that was my day. you know that other person i mentioned before? that 
+            flaming chicken person? WELL. 
+            i will steal something from that person but do it better. i will… drum roll please …</div>
+        <div id="flashlight" class="flashlight"></div>
+            
+        <script>
+let prop = (a, b) => document.body.style.setProperty(a, b)
+addEventListener('mousemove', e => prop('--xy', e.x + 'px ' + e.y + 'px'));
+addEventListener('mousedown', e => prop('--r', '60vh'));
+addEventListener('mouseup', e => prop('--r', '30vh'));
+
+            function b1() {
+            window.alert("You found the first banana! -🐵");
+            }
+
+            function b2() {
+            window.alert("You found the second banana! -monkey");
+            }
+                
+            function fakebnana() {
+            window.alert("Not this banana! Get your own banana!");
+            }
+        </script>
+        </body>
+</html>
